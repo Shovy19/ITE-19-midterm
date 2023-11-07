@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 
 import profile from '../images/profile.jpg'
 
-const Navigation = () => {
+const Navigation_user = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   const toggleMenu = () => {
@@ -28,7 +28,7 @@ const Navigation = () => {
         <div className="hidden md:flex space-x-2">
           <a href="#" className="text-white hover:bg-slate-300 px-5 rounded-md py-2">Home</a>
           <a href="#" className="text-white hover:bg-slate-300 px-5 rounded-md py-2">About</a>
-          <Link to='/Login'><p className="text-white hover:bg-slate-300 px-5 rounded-md py-2">Login</p></Link>
+          <Link to='/Login'><p className="text-white hover:bg-slate-300 px-5 rounded-md py-2">Logout</p></Link>
         </div>
 
         {/* Mobile menu (visible on small screens) */}
@@ -60,8 +60,8 @@ const Navigation = () => {
         <div className="md:hidden mt-4 text-center">
           <a href="#" className="block text-white py-2">Home</a>
           <a href="#" className="block text-white py-2">About</a>
-          <Link to='/Login'>
-            <p className="block text-white py-2">Login</p>
+          <Link to='/'>
+            <p className="block text-white py-2">Logout</p>
           </Link>
        
         </div>
@@ -70,4 +70,4 @@ const Navigation = () => {
   );
 };
 
-export default Navigation;
+export default Navigation_user;

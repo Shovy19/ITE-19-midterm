@@ -26,6 +26,7 @@ const Welcome = () => {
                         src={car4}
                         alt='car3'
                         className='w-1/3 cover rounded-md'
+                        loading='lazy'
                     />
                     <div className='px-6'>
                         <h1 className='py-3 font-bold text-2xl'>Fast and Furius</h1>
